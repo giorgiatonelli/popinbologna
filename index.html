@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>Melody Project</title>
-  <br>
-   <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 body {
@@ -15,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   width: 200px;
-  background-color:#FFC0CB;
+  background-color: #FFC0CB;
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -29,12 +26,12 @@ body {
 }
  
 .sidebar a.active {
-  background-color:#EE82EE;
+  background-color: #EE82EE;
   color: white;
 }
 
 .sidebar a:hover:not(.active) {
-  background-color:555;
+  background-color: #555;
   color: white;
 }
 
@@ -60,43 +57,61 @@ div.content {
     float: none;
   }
 }
+.container {
+  position: relative;
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+ }
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+footer {
+  text-align: center;
+  margin: 8px;
+  padding: 3px;
+  background-color: LightPink;
+  color: Black;
+}
 </style>
 </head>
 <body>
 
 <div class="sidebar">
   <a class="active" href="index.html">HOME</a>
-  <a href="theproject.html">THE PROJECT</a>
+   <a href="theproject.html">THE PROJECT</a>
   <a href="popstory.html">POP IN BOLOGNA</a>
   <a href="#">VALE - ALE</a>
   <a href="#">MARTI - ALE</a>
   <a href="report.html">REPORT</a>
 </div>
-   <style>
-body {
-  background-color:#FF99FF;
-}
 
-h1 {
-  color: white;
-  text-align: center;
-  font-family: avenir;
-}
-h2 {
-  color: white;
-  text-align: center;
-  font-family: avenir;
-}
-h3 {
-  color: white;
-  font-family: avenir;
-}
-h4 {
-  color: white;
-  font-family: avenir;
-}
-p {
-  font-family: avenir;
-  font-size: 20px;
-}
+<div class="container">
+  <img src="https://cdn.pixabay.com/photo/2017/11/02/20/31/guitars-2912447_1280.jpg" alt="Snow" style="width:100%;">
+  <div class="centered">BUILDING DATA STORIES ON MELODY <br><br> EXPLORING THE POLIFONIA CORPUS</div>
+</div>
+
+<div class="content">
+  <footer>
+<h2 style="font-family:avenir;"> Please, send us your feedback! <br> </h2> <h4 style="font-family:avenir;"> Send e-mail to giorgia.tonelli3@studio.unibo.it:</h4>
+
+<form action="mailto:giorgia.tonelli3@studio.unibo.it" method="post" enctype="text/plain">
+Name:<br>
+<input type="text" name="name"><br>
+E-mail:<br>
+<input type="text" name="mail"><br>
+Comment:<br>
+<input type="text" name="comment" size="50"><br><br>
+<input type="submit" value="Send">
+<input type="reset" value="Reset">
+</form>
+</footer>
+</div>
+</div>
+
+</body>
 </html>
