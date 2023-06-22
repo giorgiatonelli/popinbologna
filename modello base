@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "avenir", sans-serif;
+  background-color: #EE82EE;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #FFC0CB;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #EE82EE;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+.container {
+  position: relative;
+  font-size: xxx-large;
+  font-weight: bold;
+  text-align: center;
+  color: #EE82EE;
+ }
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+iframe{
+margin-left: 200px;
+}
+
+footer {
+  text-align: center;
+  margin: 8px;
+  padding: 3px;
+  background-color: LightPink;
+  color: Black;
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a class="active" href="index.html">HOME</a>
+  <a href="popstory.html">POP IN BOLOGNA</a>
+  <a href="#">VALE - ALE</a>
+  <a href="#">MARTI - ALE</a>
+  <a href="report.html">REPORT</a>
+</div>
+
+<div class="container">
+ INSERT ACTUAL CONTENT HERE 
+</div>
+
+</body>
+</html>
