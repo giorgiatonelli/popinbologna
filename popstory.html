@@ -74,7 +74,38 @@ div.content {
 iframe{
 margin-left: 200px;
 }
+body {font-family: avenir, sans-serif;}
+* {box-sizing: border-box;}
 
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color:#EE82EE;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #555;
+}
+
+.submitcontainer {
+  border-radius: 5px;
+  background-color:#FFB6C1;
+  padding: 20px;
+}
 footer {
   text-align: center;
   margin: 8px;
@@ -182,18 +213,35 @@ Lunapop won the <i>Festival di San Marino</i> with song <i>Qualcosa di Grande</i
 
 <br>
 
-<img src="https://dynamicmedia.livenationinternational.com/Media/v/j/b/d5832349-e644-4ce5-9065-8e2dd508b98b.jpg" jsaction="VQAsE" class="r48jcc pT0Scc iPVvYb" style="max-width: 1080px; height: 408px; margin: 0px; width: 432px;" alt="Informazioni su Cesare Cremonini | Live Nation Italia" jsname="kn3ccd" aria-hidden="false">
-<br>
-<p;"
-<form action="/action_page.php">
-  <label for="fname">What's your favourite Lunapop song?</label><br>
-  <input type="text" id="fname" name="fname" value="song"><br>
-  <label for="lname">What's your favourite Cesare Cremonini song?</label><br>
-  <input type="text" id="lname" name="lname" value="song"><br><br>
-  <input type="submit" value="Submit">
-</form> 
-</p>
+<h3>Your opinion matters to us:</h3>
 
+<div class="submitcontainer">
+<img src="https://dynamicmedia.livenationinternational.com/Media/v/j/b/d5832349-e644-4ce5-9065-8e2dd508b98b.jpg" jsaction="VQAsE" class="r48jcc pT0Scc iPVvYb" style="max-width: 1080px; height: 408px; margin: 0px; width: 432px;" alt="Informazioni su Cesare Cremonini | Live Nation Italia" jsname="kn3ccd" aria-hidden="false">
+  <form action="/action_page.php">
+    <label for="song">What's your favourite song by Lunapop?</label>
+    <input type="text" id="song" name="fav song by Lunapop" placeholder="Your favourite song by Lunapop...">
+
+    <label for="song">What's your favourite song by Cesare Cremonini?</label>
+    <input type="text" id="lname" name="fav song by Cremonini" placeholder="Your favourite song by Cesare Cremonini...">
+
+    <label for="album">What's your favourite album?</label>
+    <select id="album" name="Whaat's your favourite album?">
+      <option value="Squerez">Squerez</option>
+      <option value="Bagus">Bagus</option>
+      <option value="Il primo bacio sulla luna">Il primo bacio sulla Luna</option>
+      <option value="La teoria dei colori">La teoria dei colori</option>
+      <option value="Possibili scenari">Possibili scenari</option>
+      <option value="La ragazza del futuro">La ragazza del futuro</option>
+    </select>
+
+    <label for="subject">Please, let us know who are some other artists from Bologna you like:</label>
+    <textarea id="subject" name="artists from Bologna" placeholder="Write something about artists from Bologna that you like.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<p>
+</p>
 <h3> LO STATO SOCIALE </h3>
 <p> <b> Lo Stato Sociale </b> is an Italian band formed in 2009, in Bologna.
 Stato Sociale was the runner-up in <i>Festival di Sanremo</i> 2018, with their song <i>Una Vita in Vacanza</i>. </p>
