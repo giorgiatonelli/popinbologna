@@ -1,187 +1,59 @@
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-<style>
-body, html {
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
   height: 100%;
-  font-family: 'Montserrat', sans-serif;
-background-image: 
-    left: 0;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
     width: 100%;
-    height: 100%;
-    border: 0;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
 }
 
-audio, canvas, iframe, img, svg, video {
-    vertical-align: middle;
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
 }
-*, :after, :before {
-    box-sizing: border-box;
-}
-user agent stylesheet
-img {
-    overflow-clip-margin: content-box;
-    overflow: clip;
-}
-body {
-    color: #191b26;
-}
-body, button, input {
-    font-size: 14px;
-}
-body, button, input, label {
-    font-size: 14px;
-    font-weight: 400;
-}
-style attribute {
-    --vh: 6.78px;
-}
-button, html, input {
-    font-family: Open Sans,system-ui;
-}
-button, html, input, textarea {
-    font-family: Open Sans,Arial,system-ui;
-    color: #191b26;
-}
-html {
-    cursor: default;
-    line-height: 1.5;
-    -moz-tab-size: 4;
-    tab-size: 4;
-    -webkit-tap-highlight-color: transparent;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    word-break: break-word;
-}
-:after, :before {
-    text-decoration: inherit;
-    vertical-align: inherit;
-}
-*, :after, :before {
-    box-sizing: border-box;
-}
-:after, :before {
-    text-decoration: inherit;
-    vertical-align: inherit;
-}
-*, :after, :before {
-    box-sizing: border-box;
-}
-
-.bgimg {
-  background-position: center;
-  background-size: cover;
-  background-image: url("recordplayer.jpg")
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
-
-audio, canvas, iframe, img, svg, video {
-    vertical-align: middle;
-}
-*, :after, :before {
-    box-sizing: border-box;
-}
-user agent stylesheet
-img {
-    overflow-clip-margin: content-box;
-    overflow: clip;
-}
-body {
-    color: #191b26;
-}
-body, button, input {
-    font-size: 14px;
-}
-body, button, input, label {
-    font-size: 14px;
-    font-weight: 400;
-}
-style attribute {
-    --vh: 6.78px;
-}
-button, html, input {
-    font-family: Open Sans,system-ui;
-}
-button, html, input, textarea {
-    font-family: Open Sans,Arial,system-ui;
-    color: #191b26;
-}
-html {
-    cursor: default;
-    line-height: 1.5;
-    -moz-tab-size: 4;
-    tab-size: 4;
-    -webkit-tap-highlight-color: transparent;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    word-break: break-word;
-}
-:after, :before {
-    text-decoration: inherit;
-    vertical-align: inherit;
-}
-*, :after, :before {
-    box-sizing: border-box;
-}
-:after, :before {
-    text-decoration: inherit;
-    vertical-align: inherit;
-}
-*, :after, :before {
-    box-sizing: border-box;
-}
-
-.menu {
-  display: none;
-}
-</style>
-<style>
-body, html {
-  height: 100%;
-  font-family: "Montserrat", sans-serif;
-}
-
-.bgimg {
-  background-position: center;
-  background-size: cover;
-  min-height: 75%;
-}
-
-.menu {
-  display: none;
-}
-</style>
-</head>
-<body>
-
-<!-- Header with image -->
-<header class="bgimg w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-middle w3-center">
-    <span class="w3-text-white" style="font-size:40px">Building Data Stories<br>on Melody</span>
-  </div>
-</header>
-
-    
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index: 3; width: 250px; display: block;" id="mySidebar">
-  <div class="w3-container w3-display-container w3-padding-16">
-    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-    <h3 class="w3-wide"><b>Building data stories on Melody</b></h3>
-  </div>
-  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-  <a href="index.html" class="w3-bar-item w3-button">HOME</a>
-    <a href="popstory.html" class="w3-bar-item w3-button">POP IN BOLOGNA </a>
-    <a href="#" class="w3-bar-item w3-button">MARCUCCI</a>
-    <a href="#" class="w3-bar-item w3-button">SANTARINI</a>
-    <a href="report.html" class="w3-bar-item w3-button">REPORT</a>
-  </div>
-</header>
-
 <!-- Footer -->
 <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
     <div class="w3-row-padding">
