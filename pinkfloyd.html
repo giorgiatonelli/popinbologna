@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "avenir", sans-serif;
+  background-color: #EE82EE;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #FFC0CB;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #EE82EE;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+.container {
+  position: relative;
+  font-size: xxx-large;
+  font-weight: bold;
+  text-align: center;
+  color: #EE82EE;
+ }
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+iframe{
+margin-left: 200px;
+}
+
+footer {
+  text-align: center;
+  margin: 8px;
+  padding: 3px;
+  background-color: LightPink;
+  color: Black;
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a class="active" href="index.html">HOME</a>
+  <a href="popstory.html">POP IN BOLOGNA</a>
+  <a href="#">VALE - ALE</a>
+  <a href="#">MARTI - ALE</a>
+  <a href="report.html">REPORT</a>
+</div>
+
+<div class="container"></div>
+<h1 style="border: 3px solid DodgerBlue;">Pink Floyd</h1>
+
+<p>A project by Alessia Perrone and Martina Santarini</p>
+<img src="https://a6p8a2b3.stackpathcdn.com/T3OpcsoaSO8DOBSUtULWvML4TvE=/702x526/smart/rockol-img/img/foto/upload/pinkfloyd1973.jpg" alt="Stickman" width="400" height="350">
+<p>A unique journey with Wikidata to discover one of the most renowned British music bands of all time.</p>
+<p>We started our investigation analysing the number of British music bands. In particular, we focused on the rock genre as we are really interested in, and of course we could not help but to center deeply on probably the most renowned and influencing music band of all time: <b>Pink Floyd</b>. They became known for their biting political, social and emotional commentary.</p>
+<p>The band was born back to 1963 thanks to the meeting of three architecture students from the University of London, Roger Waters, Nick Mason e Richard Wright. At first, the band did not have the unique name with which everyone knows them, but they changed it several times: for example, they used to call themselves <i>Spectrum Five, Tea Set</i>, etc. Finally, they switched to Pink Floyd in 1965, combining the names of two bluesmen, Pink Anderson and Floyd Council.</p>
+<p><br></p></br>
+<h1>Search Keyword</h1>
+
+<form action="/action_page.php">
+  <label for="gsearch">Search:</label>
+  <input type="search" id="gsearch" name="gsearch">
+  <input type="submit">
+</form>
+
+<p><br></p></br>
+
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 9px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>Pink Floyd Members (powered by Melody)</h2>
+
+<table>
+  <tr>
+    <th>Member</th>
+    <th>Birth</th>
+     <th>Death</th>
+    <th>Birth Place</th>
+    <th>Voice Type</th>
+  </tr>
+  <tr>
+    <td>Syd Barrett</td>
+    <td>1966</td>
+    <td>2006</td>
+     <td>Cambridge</td>
+     <td>-</td>
+  </tr>
+  <tr>
+    <td>Richard Wright</td>
+    <td>1943</td>
+    <td>2008</td>
+    <td>London</td>
+    <td>Baritone</td>
+  </tr>
+  <tr>
+    <td>Nick Mason</td>
+    <td>1944</td>
+    <td>-</td>
+     <td>Birmingham</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Roger Waters</td>
+    <td>1943</td>
+    <td>-</td>
+     <td>Great Bookham</td>
+    <td>Baritone</td>
+  </tr>
+  <tr>
+    <td>David Gilmour</td>
+    <td>1946</td>
+    <td>-</td>
+    <td>Cambridge</td>
+    <td>Baritone</td>
+  </tr>
+  <tr>
+    <td>Bob Klose</td>
+    <td>1945</td>
+    <td>-</td>
+    <td>Cambridge</td>
+    <td>-</td>
+  </tr>
+</table>
+<p><br></p></br>
+<h2> Pink Floyd genre (powered by Melody)</h2>
+
+<table><caption id="actionresults_caption_1687769323078" class="table_result" href="http://www.wikidata.org/entity/Q2306"></tr></thead><tbody><tr><td><span><a class="table_result" href="http://www.wikidata.org/entity/Q236932">acid rock</a></span><span class="action_button"></span></td></tr><tr><td><span><a class="table_result" href="http://www.wikidata.org/entity/Q3408028">proto-prog</a></span><span class="action_button"></span></td></tr><tr><td><span><a class="table_result" href="http://www.wikidata.org/entity/Q236913">space rock</a></span><span class="action_button"></span></td></tr><tr><td><span><a class="table_result" href="http://www.wikidata.org/entity/Q217467">art rock</a></span><span class="action_button"></span></td></tr><tr><td><span><a class="table_result" href="http://www.wikidata.org/entity/Q1641839">experimental rock</a></span><span class="action_button"></span></td></tr><tr><td><span><a class="table_result" href="http://www.wikidata.org/entity/Q193355">blues rock</a></span><span class="action_button"></span></td></tr><tr><td><span><a class="table_result" href="http://www.wikidata.org/entity/Q206159">psychedelic rock</a></span><span class="action_button"></span></td></tr><tr><td><span><a class="table_result" href="http://www.wikidata.org/entity/Q49451">progressive rock</a></span><span class="action_button"></span></td></tr></tbody></table>
+
+<p>Pink Floyd began their career at the vanguard of London's underground music scene. They rapidly achieved great success and they were always keen on exploring more into various music genres. In fact, they were the founders of two major music movements: psychedelic space-rock and blues-based progressive rock.</p>
+<p>Pink Floyd are known for their wide range of instruments, which belong to different genres and are combined harmoniously to create their songs. Moreover, it is notorious their use of non-musical sounds, a distinctive feature of the band. Pink Floyd are masters in creating atmospheres, anticipating situations, and giving sensations.</p>
+<p><br></p></br>
+
+<h2> Pink Floyd Albums (powered by Melody)</h2>
+
+<table>&nbsp;<thead><tr><th>Album</th><th>Date</th></tr></thead><tbody><tr><td><span class="table_result">The Piper at the Gates of Dawn</span></td><td><span class="table_result">1967</span></td></tr><tr><td><span class="table_result">A Saucerful of Secrets</span></td><td><span class="table_result">1968</span></td></tr><tr><td><span class="table_result">Ummagumma</span></td><td><span class="table_result">1969</span></td></tr><tr><td><span class="table_result">Soundtrack From The Film <i>More</i></span></td><td><span class="table_result">1969</span></td></tr><tr><td><span class="table_result">Atom Heart Mother</span></td><td><span class="table_result">1970</span></td></tr><tr><td><span class="table_result">The Best of The Pink Floyd</span></td><td><span class="table_result">1970</span></td></tr><tr><td><span class="table_result">Meddle</span></td><td><span class="table_result">1971</span></td></tr><tr><td><span class="table_result">Relics</span></td><td><span class="table_result">1971</span></td></tr><tr><td><span class="table_result">Obscured by Clouds</span></td><td><span class="table_result">1972</span></td></tr><tr><td><span class="table_result">The Dark Side of the Moon</span></td><td><span class="table_result">1973</span></td></tr><tr><td><span class="table_result">A Nice Pair</span></td><td><span class="table_result">1973</span></td></tr><tr><td><span class="table_result">Masters of Rock</span></td><td><span class="table_result">1974</span></td></tr><tr><td><span class="table_result">Wish You Were Here</span></td><td><span class="table_result">1975</span></td></tr><tr><td><span class="table_result">Pink Floyd: Animal Instincts</span></td><td><span class="table_result">1977</span></td></tr><tr><td><span class="table_result">Animals</span></td><td><span class="table_result">1977</span></td></tr><tr><td><span class="table_result">The First XI</span></td><td><span class="table_result">1979</span></td></tr><tr><td><span class="table_result">The Wall</span></td><td><span class="table_result">1979</span></td></tr><tr><td><span class="table_result">A Collection of Great Dance Songs</span></td><td><span class="table_result">1981</span></td></tr><tr><td><span class="table_result">The Final Cut</span></td><td><span class="table_result">1983</span></td></tr><tr><td><span class="table_result">Works</span></td><td><span class="table_result">1983</span></td></tr><tr><td><span class="table_result">Prism</span></td><td><span class="table_result">1987</span></td></tr><tr><td><span class="table_result">A Momentary Lapse of Reason</span></td><td><span class="table_result">1987</span></td></tr><tr><td><span class="table_result">Delicate Sound of Thunder</span></td><td><span class="table_result">1988</span></td></tr><tr><td><span class="table_result">Pink Floyd in Venice</span></td><td><span class="table_result">1989</span></td></tr><tr><td><span class="table_result">A Perfect Reception</span></td><td><span class="table_result">1990</span></td></tr><tr><td><span class="table_result">Tonite Let's All Make Love In London</span></td><td><span class="table_result">1991</span></td></tr><tr><td><span class="table_result">The Early Singles</span></td><td><span class="table_result">1992</span></td></tr><tr><td><span class="table_result">Shine On</span></td><td><span class="table_result">1992</span></td></tr><tr><td><span class="table_result">A Passage of Time</span></td><td><span class="table_result">1994</span></td></tr><tr><td><span class="table_result">Nothing Is Changed</span></td><td><span class="table_result">1994</span></td></tr><tr><td><span  class="table_result">1994</span></td></tr><tr><td><span class="table_result">The Division Bell</span></td><td><span class="table_result">1994</span></td></tr><tr><td><span class="table_result">Pulse</span></td><td><span class="table_result">1995</span></td></tr><tr><td><span class="table_result">1967: The First Three Singles</span></td><td><span class="table_result">1997</span></td></tr><tr><td><span class="table_result">Is There Anybody Out There? The Wall Live 1980-81</span></td><td><span class="table_result">2000</span></td></tr><tr><td><span class="table_result">Echoes: The Best of Pink Floyd</span></td><td><span class="table_result">2001</span></td></tr><tr><td><span class="table_result">Oh, by the Way</span></td><td><span class="table_result">2007</span></td></tr><tr><td><span class="table_result">The Best of Pink Floyd: A Foot in the Door</span></td><td><span class="table_result">2011</span></td></tr><tr><td><span class="table_result">Discovery</span></td><td><span class="table_result">2011</span></td></tr><tr><td><span class="table_result">Wish You Were Here - Experience Edition</span></td><td><span class="table_result">2011</span></td></tr><tr><td><span class="table_result">Another Movie in Long Island</span></td><td><span class="table_result">2013</span></td></tr><tr><td><span class="table_result">The Endless River</span></td><td><span class="table_result">2014</span></td></tr><tr><td><span class="table_result">The Early Years 1965-1972</span></td><td><span class="table_result">2016</span></td></tr><tr><td><span class="table_result">Cre/ation - The Early Years 1967-1972</span></td><td><span class="table_result">2016</span></td></tr><tr><td><span class="table_result">The Later Years 1987-2019</span></td><td><span class="table_result">2019</span></td></tr><tr><td><span class="table_result">The Later Years</span></td><td><span class="table_result">2019</span></td></tr><tr><td><span class="table_result">Live at Knebworth 1990</span></td><td><span class="table_result">2021</span></td></tr></tbody></table>
+<p><br></p></br>
+<p><b><h2>Do you have any Pink Floyd CDs/vynils? Which ones?</b></p></h2>
+<form action="/action_page.php">
+  <textarea name="message" rows="8" cols="60">Write here</textarea>
+  <br><br>
+  <input type="submit">
+</form>
+<p><br></p></br>
+<img src="https://www.milanopocket.it/wp-content/uploads/2022/09/roger-waters-milano-2023.jpg" alt="Stickman" width="350" height="300"> 
+<img src="https://www.unipolarena.it/wp-content/uploads/2022/09/Roger-Waters-Italy-SM-Square-Bologna.png" alt="Stickman" width="350" height="300"> 
+<p>On March 1983 Pink Floyd released <i>The Final Cut</i>, the last album with <b>Roger Waters</b>. From this moment, the bassist will separate from his bandmates to pursue a solo career. In fact, he still tours to sing the most renowned songs of the band in many countries around the world including Italy, where he exhibited in Bologna last April.</p>
+
+<h2>Talk to us!</h2>
+<p></p>
+<p>Have you ever been to one of Roger Waters' concerts? If so, tell us your experience!</p>
+<form action="/action_page.php">
+  <textarea name="message" rows="15" cols="80">Write here</textarea>
+  <br><br>
+  <input type="submit">
+</form>
+
+<p><br></p></br>
+<form action="/action_page.php">
+<h2> Top tracks on Spotify</h2>
+ <p></p>
+</body>
+</html>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/0k17h0D3J5VfsdmQ1iZtE9?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<p><br></p></br>
+
+<h1 style="font-size:20px;">What was their first song?</h1>
+
+<form action="/action_page.php">
+  <input type="checkbox" id="song1" name="song1" value="Correct!">
+  <label for="song1"> The Piper At The Gates Of Dawn</label><br>
+  <input type="checkbox" id="song2" name="song2" value="Wrong">
+  <label for="song2"> Wish You Were Here</label><br>
+  <input type="checkbox" id="song3" name="song3" value="Wrong">
+  <label for="song3"> Comfortably Numb</label><br><br>
+  <input type="submit" value="Submit">
+</form>
+<p><br></p></br>
+<table>&nbsp;<thead><tr><th><h2>Awards received (powered by Melody)</th><h/2></tr></thead><tbody><tr><td><a class="table_result" href="http://www.wikidata.org/entity/Q81180">Grammy Hall of Fame (1998; 2007)</a></td></tr><tr><td><a class="table_result" href="http://www.wikidata.org/entity/Q179191">Rock and Roll Hall of Fame (1996)</a></td></tr><tr><td><a class="table_result" href="http://www.wikidata.org/entity/Q1542186">Grammy Award for Best Rock Instrumental Performance (1994)</a></td></tr><tr><td><a class="table_result" href="http://www.wikidata.org/entity/Q754841">Polar Music Prize (2008)</a></td></tr></tbody></table>
+<p><br></p></br>
+<h2>Follower on social media (powered by Melody)</h2>
+ <p>Although Pink Floyd were born in the 60s, they have always been open to innovation, and not only from a musical perspective. Indeed with the digital era they joined the social media, and nowadays they are still very influential and have lots of followers.</p>
+<table>&nbsp;<thead><tr><th>Followers</th></tr></thead><tbody><tr><td><span class="table_result">3447531</span></td></tr></tbody></table>
+<p><br></p></br>
+<h2>Curiosities</h2>
+
+<article>
+  <h1 style="font-size:20px;">Pink Floyd logo</h1>
+  <p>Pink Floyd owns many graphic symbols because, for the band members, designing emblems was once as important an aspect of creativity as making music. However, until 1985 they did not have a specific logo. Pictures and test elements from the covers of new albums, were used as temporary signs.
+In 1985 bassist Roger Waters left the band, and the other bandmates decided to have an official emblem, so they created a monogram symbol, in which the <i>P</i>, <i>F</i>, <i>D</i>, and <i>G</i> were encrypted.</p>
+</article>
+<img src="https://logos-world.net/wp-content/uploads/2020/11/Pink-Floyd-Logo.png" alt="Lamp" width="350" height="250">
+
+<article>
+   <h1 style="font-size:20px;">Cover of The Dark Side of The Moon</h1>
+  <p>The most memorable image of Pink Floyd was a triangular prism through which a ray passed, refracting and decaying into the entire spectrum of colors. This drawing became the main decoration of <i>The Dark Side of The Moon</i>. It was chosen to celebrate the light show that Pink Floyd performed during their concerts. The triangle, a geometric figure rich in symbolic meanings including thought and ambition, best represented the texts of Rogers Waters.
+</p>
+</article>
+
+<img src="https://logos-world.net/wp-content/uploads/2020/11/Pink-Floyd-Logo-1973-1978.jpg" alt="Stickman" width="250" height="250">
+<p><br></p></br>
+<h1 style="font-size:20px;">How many of these curiosities did you already know?</h1>
+
+<form action="/action_page.php">
+  <label for="choice">Select a choice:</label>
+  <select name="choice" id="choice">
+  
+     <option value="You're a rookie">0</option>
+      <option value="You're almost there!">1</option>
+      <option value="Here’s a big fan of PF!">2</option>
+    
+      
+    </optgroup>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+ 
+<p><br></p></br>
+<h1 style="border: 3px solid Tomato;">Contact us!</h1>
+
+<h3>If you want to receive more infromation about our investigation:</h3>
+<form action="/action_page.php">
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email">
+  <input type="submit">
+</form>
+
+</body>
+</html>
