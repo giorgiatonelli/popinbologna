@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <style>
 body {
   margin: 0;
@@ -75,7 +75,38 @@ div.content {
 iframe{
 margin-left: 200px;
 }
+body {font-family: avenir, sans-serif;}
+* {box-sizing: border-box;}
 
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color:#EE82EE;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #555;
+}
+
+.submitcontainer {
+  border-radius: 5px;
+  background-color:#FFB6C1;
+  padding: 20px;
+}
 footer {
   text-align: center;
   margin: 8px;
@@ -83,7 +114,79 @@ footer {
   background-color: LightPink;
   color: Black;
 }
+  /* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #FFB6C1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
 </style>
+   
 </head>
 <body>
 
@@ -95,7 +198,6 @@ footer {
   <a href="#">VALE - ALE</a>
   <a href="report.html">REPORT</a>
 </div>
-
 <div class="container">
   <img src="https://cdn.pixabay.com/photo/2017/11/02/20/31/guitars-2912447_1280.jpg" alt="Snow" style="width:100%;">
   <div class="centered">BUILDING DATA STORIES ON MELODY <br><br> EXPLORING THE POLIFONIA CORPUS</div>
